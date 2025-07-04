@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo list</title>
+  <link rel="stylesheet" href="todo.css">
+</head>
+<body id="home">
+  <header>
+    <nav>
+      <h1 class="logo">To do list</h1>
+      <ul class="nav-links">
+        <li><a href="#home"><button>Home</button></a></li>
+        <li><a href="#about"><button>About</button></a></li>
+        <li><a href="#board"><button>Create</button></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="center">
+    <div class="board">
+      <!-- NEW TASK COLUMN -->
+      <div class="column">
+        <div id="board" class="app">
+          <h1>New Task</h1>
+          <div class="input-container">
+            <input type="text" id="taskInput1" placeholder="Add a new task..." />
+            <button id="addBtn1">Add</button>
+          </div>
+          <ul id="taskList1"></ul>
+        </div>
+      </div>
+
+      <!-- SCHEDULED COLUMN -->
+      <div class="column">
+        <div class="app">
+          <h1>Scheduled</h1>
+          <div class="input-container">
+            <input type="text" id="taskInput2" placeholder="Add a Scheduled task..." />
+            <button id="addBtn2">Add</button>
+          </div>
+          <ul id="taskList2"></ul>
+        </div>
+      </div>
+
+      <!-- IN PROGRESS COLUMN -->
+      <div class="column">
+        <div class="app">
+          <h1>In progress</h1>
+          <div class="input-container">
+            <input type="text" id="taskInput3" placeholder="Add a In progress task..." />
+            <button id="addBtn3">Add</button>
+          </div>
+          <ul id="taskList3"></ul>
+        </div>
+      </div>
+
+      <!-- COMPLETED COLUMN -->
+      <div class="column">
+        <div class="app">
+          <h1>Completed</h1>
+          <div class="input-container">
+            <input type="text" id="taskInput4" placeholder="Completed tasks..." />
+            <button id="addBtn4">Add</button>
+          </div>
+          <ul id="taskList4"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <center>
+  <div id="about" class="about">
+      <h1>About Us</h1>
+      <p>We are Way to Info — a team of passionate and creative web developers on a mission to build powerful, clean, and modern digital solutions. As fresh minds in the tech world, we blend learning with innovation to craft websites and apps that stand out. Driven by teamwork, curiosity, and code, we’re all about turning ideas into impactful web experiences. Let’s build the future — one line of code at a time!</p>
+      
+  </div>
+</center>
+
+  <footer>
+    <h2>"Not just developers — we're digital dreamers."</h2>
+    <p>© 2025 Way to Info. All rights reserved.</p>
+  </footer>
+
+  <script src="todo.js"></script>
+</body>
+</html>
